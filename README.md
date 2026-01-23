@@ -6,7 +6,7 @@ A cyberpunk-themed side-scrolling platformer game built with React and HTML5 Can
 
 ## 🎮 Play Now
 
-[Play ChronoJoust on GitHub Pages](https://YOUR_USERNAME.github.io/chronojoust/)
+[Play ChronoJoust on GitHub Pages](https://kenbennedy.github.io/chronojoust/)
 
 *(Replace YOUR_USERNAME with your actual GitHub username)*
 
