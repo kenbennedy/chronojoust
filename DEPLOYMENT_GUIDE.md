@@ -8,6 +8,7 @@ All files are ready in your outputs folder:
 - ✅ `ChronoJoust_cover_art.png` - Cover art/favicon
 - ✅ `README.md` - Repository documentation
 - ✅ `.gitignore` - Git ignore rules
+- ✅ `test.html` - Diagnostic page (optional but helpful)
 
 ## Fast Track Deployment (5 minutes)
 
@@ -22,7 +23,7 @@ All files are ready in your outputs folder:
 
 2. **Upload Files**
    - Click "uploading an existing file"
-   - Drag ALL 5 files from your outputs folder into the upload area
+   - Drag ALL 6 files from your outputs folder into the upload area (test.html is optional)
    - Commit message: "Initial commit"
    - Click "Commit changes"
 
@@ -80,7 +81,17 @@ npx http-server
 ## Troubleshooting
 
 **Stuck on loading screen?**
-- The warnings about CDN usage are NORMAL - ignore them
+1. **First, try the test page:** Visit `https://YOUR_USERNAME.github.io/chronojoust/test.html`
+   - This will run 4 tests to diagnose the problem
+   - Follow the instructions it provides
+   
+2. **Check which test fails:**
+   - Test 1 failing = GitHub Pages not deployed yet (wait a few minutes)
+   - Test 2 failing = Internet/CDN issue (check connection)
+   - Test 3 failing = ChronoJoust.jsx not uploaded or in wrong folder
+   - Test 4 failing = Browser compatibility issue (try Chrome)
+
+**The warnings about CDN usage are NORMAL - ignore them**
 - Open browser console (F12) and check for actual errors (red text)
 - Make sure you're running from a web server (not opening file:// directly)
 - Try a different browser (Chrome recommended)
