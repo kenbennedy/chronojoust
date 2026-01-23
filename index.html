@@ -25,79 +25,20 @@
             background: #0a0a1a;
             overflow-x: hidden;
         }
-        
-        /* Loading screen */
-        #loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #0a0a1a;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-        }
-        
-        #loading h1 {
-            color: #00ffff;
-            font-size: 3rem;
-            font-weight: bold;
-            text-shadow: 0 0 20px #00ffff;
-            margin-bottom: 1rem;
-        }
-        
-        #loading p {
-            color: #8800ff;
-            font-size: 1.2rem;
-        }
-        
-        .spinner {
-            border: 4px solid rgba(0, 255, 255, 0.1);
-            border-top: 4px solid #00ffff;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-            margin-top: 2rem;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
     </style>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loading">
-        <h1>CHRONO-JOUST</h1>
-        <p>Loading the void...</p>
-        <div class="spinner"></div>
-    </div>
-    
     <!-- React App Root -->
     <div id="root"></div>
     
-    <!-- Load and render the game -->
+    <!-- Inline game code to avoid loading issues -->
     <script type="text/babel" src="ChronoJoust.jsx"></script>
+    
     <script type="text/babel">
-        // Wait for DOM to be ready
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get the root element
-            const rootElement = document.getElementById('root');
-            
-            // Create root and render the game
-            const root = ReactDOM.createRoot(rootElement);
-            root.render(<ChronoJoust />);
-            
-            // Hide loading screen after a short delay
-            setTimeout(() => {
-                document.getElementById('loading').style.display = 'none';
-            }, 1000);
-        });
+        // Render the game
+        const rootElement = document.getElementById('root');
+        const root = ReactDOM.createRoot(rootElement);
+        root.render(<ChronoJoust />);
     </script>
 </body>
 </html>

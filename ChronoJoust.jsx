@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
-
 const ChronoJoust = () => {
+  const { useState, useEffect, useRef, useMemo } = React;
   const canvasRef = useRef(null);
   const splashCanvasRef = useRef(null);
   const [gameState, setGameState] = useState('menu');
@@ -3900,4 +3899,4 @@ const ChronoJoust = () => {
   );
 };
 
-export default ChronoJoust;
+// Component is now available globally for browser use

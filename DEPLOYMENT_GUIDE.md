@@ -79,10 +79,24 @@ npx http-server
 
 ## Troubleshooting
 
+**Stuck on loading screen?**
+- The warnings about CDN usage are NORMAL - ignore them
+- Open browser console (F12) and check for actual errors (red text)
+- Make sure you're running from a web server (not opening file:// directly)
+- Try a different browser (Chrome recommended)
+- Clear cache and hard reload (Ctrl+Shift+R or Cmd+Shift+R)
+
 **Game won't load?**
 - Clear browser cache (Ctrl+Shift+R or Cmd+Shift+R)
 - Check browser console for errors (F12)
 - Make sure all 5 files are in the repository root
+- Verify ChronoJoust.jsx doesn't have import/export statements (should be removed for browser use)
+
+**Console warnings about Tailwind/Babel?**
+- These are normal! The game still works perfectly
+- Warnings like "cdn.tailwindcss.com should not be used in production" can be ignored
+- Warnings about "in-browser Babel transformer" can be ignored
+- These only show in development; a production build would remove them
 
 **GitHub Pages not working?**
 - Wait 5 minutes - it takes time to deploy
