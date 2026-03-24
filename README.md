@@ -2,6 +2,8 @@
 
 A cyberpunk-themed side-scrolling platformer game built with React and HTML5 Canvas. Battle through four corrupted realms as the last Chrono Knight to prevent reality's end.
 
+Game concept and design by Eddie, with help from Ben using Claude to do the coding.
+
 ![ChronoJoust Cover Art](ChronoJoust_cover_art.png)
 
 ## 🎮 Play Now
